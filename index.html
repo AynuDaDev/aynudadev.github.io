@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aynu | Indie Game Developer</title>
-    <link rel="icon" type="favicon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aynu | Indie Game Developer</title>
+<link rel="icon" type="favicon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<script>
+if (window.location.pathname === '/index.html') {
+    window.history.replaceState(null, '', '/');
+}
+</script>
 </head>
 <body>
-    <header>
+<header>
   <div class="container">
     <h1 class="animated-header">
       <span class="left">Aynu</span>
@@ -26,59 +31,55 @@
   </div>
 </header>
 
-
-
-    <section id="hero">
-        <div class="container">
-            <h2>Hello, I'm Aynu</h2>
-            <b><p>Indie game developer & coder. Check out my projects and repos below!</p></b>
-            <div class="links">
-                <a class="btn" href="https://Aynu.itch.io" target="_blank">My Games</a>
-                <a class="btn" href="https://github.com/AynuDaDev" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="profile">
-            <img src="Aynu.png" alt="My profile picture" class="profile-pic">
-            <p>
-                I am an indie game developer and Python Dev. I make games. Even though my games seem weird, 
-                I <strong>have my OWN style</strong> of projects that fit different <strong>Unexpected</strong> Genres.
-            </p>
-        </div>
+<section id="hero">
+  <div class="container">
+    <h2>Hello, I'm Aynu</h2>
+    <b><p>Indie game developer & coder. Check out my projects and repos below!</p></b>
+    <div class="links">
+      <a class="btn" href="https://Aynu.itch.io" target="_blank">My Games</a>
+      <a class="btn" href="https://github.com/AynuDaDev" target="_blank">GitHub</a>
+      <a class="btn" href="skills.html" target="_blank">View My Skills</a>
     </div>
+  </div>
 </section>
 
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="profile">
+      <img src="Aynu.png" alt="My profile picture" class="profile-pic">
+      <p>
+        I am an indie game developer and Python Dev. I make games. Even though my games seem weird, 
+        I <strong>have my OWN style</strong> of projects that fit different <strong>Unexpected</strong> Genres.
+      </p>
+    </div>
+  </div>
+</section>
 
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <ul>
+      <a class="btn" href="https://Aynu.itch.io" target="_blank">My Games</a>
+      <a class="btn" href="https://github.com/AynuDaDev" target="_blank">My GitHub</a>
+    </ul>
+  </div>
+</section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <a class="btn" href="https://Aynu.itch.io" target="_blank">My Games</a>
-                <a class="btn" href="https://github.com/AynuDaDev" target="_blank">My GitHub</a>
-            </ul>
-        </div>
-    </section>
+<section id="skills">
+  <div class="container">
+    <h2>Learn More</h2>
+    <b><p>You can view my full skillset.</p></b>
+    <div class="links">
+      <a class="btn" href="skills.html" target="_blank">My Skills</a>
+    </div>
+  </div>
+</section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Learn More</h2>
-            <b><p>You can view my full skillset.</p></b>
-            <div class="links">
-                <a class="btn" href="skills.html" target="_blank">My Skills</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Aynu. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Aynu. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
-
