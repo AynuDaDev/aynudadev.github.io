@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="favicon" href="favicon.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .animated-header {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      font-size: 2rem;
+    }
+
+    .animated-header .bar {
+      margin: 0 1rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #skills-hero {
+      background: #f2f2f2;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    #skills-hero h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    #skills-grid {
+      padding: 4rem 0;
+      background-color: #fff;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 400px));
+      gap: 6px;
+      justify-content: center;
+    }
+
+    .skill-card {
+      border: 2px solid black;
+      border-radius: 12px;
+      padding: 1.5rem;
+      background-color: #f9f9f9;
+      text-align: left;
+    }
+
+    .skill-card h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .skill-card ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    #back-links {
+      background-color: #f0f0f0;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .links .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="animated-header">
+        <span class="left">Aynu</span>
+        <span class="bar">|</span>
+        <span class="right">Indie Game Dev</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#back-links">My Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>My Skillset</h2>
+      <p>The Following are my skills, experiences, prefferences and things I know.</p>
+    </div>
+  </section>
+
+  <section id="skills-grid">
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Preferred Languages</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li><a href="https://Python.org"><b>Python</b></a></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Languages I Know</h3>
+          <ul>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li><a href="https://Python.org"><b>Python</b></a></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Achievements</h3>
+          <ul>
+            <li>Won 200th place in Ludam Dare our of 4,000 entires</li>
+            <li>Won 1000th place in GMTK game jam out of 37,000 entries.</li>
+            <li><a href="https://Pygame.org"><b>Pygame</b></a> Mid-Level Game Dev</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Experience</h3>
+          <ul>
+            <li>8 years of Game Dev Experience</li>
+            <li>Familiar with <a href="https://Pygame.org"><b>Pygame</b></a>; a library in <a href="https://Python.org"><b>Python</b></a> used to make 2d games</li>
+            <li>Indie Game Dev Experience.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="back-links">
+    <div class="container">
+      <div class="links">
+        <a class="btn" href="index.html#projects">View My Projects</a>
+        <a class="btn" href="https://github.com/AynuDaDev" target="_blank">GitHub</a>
+        <a class="btn" href="https://Aynu.itch.io" target="_blank">Itch.io</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Aynu. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
