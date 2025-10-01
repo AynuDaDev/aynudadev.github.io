@@ -9,6 +9,14 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.faq-item {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
 body {
     background-color: #f0f2f5;
     color: #333;
@@ -208,4 +216,5 @@ footer {
 
 a {
     color: #000000;
+
 }
