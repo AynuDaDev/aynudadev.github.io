@@ -12,37 +12,43 @@
 <body>
 
 <header>
-<div class="logo">AynuDaDev</div>
-<nav>
-<a href="https://www.youtube.com/@AynuDaDev" target="_blank">youtube</a>
-<a href="https://github.com/AynuDaDev" target="_blank">github</a>
-<a href="https://aynu.itch.io" target="_blank">itch</a>
-</nav>
+  <div class="logo">AynuDaDev</div>
+  <nav>
+    <a href="https://www.youtube.com/@AynuDaDev" target="_blank">youtube</a>
+    <a href="https://github.com/AynuDaDev" target="_blank">github</a>
+    <a href="https://aynu.itch.io" target="_blank">itch</a>
+  </nav>
 </header>
 
 <section class="hero">
-
-<img src="AynuDaDev.png" alt="AynuDaDev" class="profile">
-
-<h1>hi, i'm AynuDaDev</h1>
-
-<p>
-I am a Indie Game Developer, composer and pixel artist. Check my games out on my 
-<a href="https://aynu.itch.io" target="_blank">itch page</a>
-</p>
-
-<div class="buttons">
-<a href="https://www.youtube.com/@AynuDaDev" target="_blank" class="btn primary">Youtube</a>
-<a href="https://github.com/AynuDaDev" target="_blank" class="btn secondary">Github</a>
-</div>
-
+  <img src="AynuDaDev.png" alt="AynuDaDev" class="profile">
+  <h1>hi, i'm AynuDaDev</h1>
+  <p>
+    I am an Indie Game Developer, composer and pixel artist. Check my games out on my 
+    <a href="https://aynu.itch.io" target="_blank">itch page</a>
+  </p>
+  <div class="buttons">
+    <a href="https://www.youtube.com/@AynuDaDev" target="_blank" class="btn primary">Youtube</a>
+    <a href="https://github.com/AynuDaDev" target="_blank" class="btn secondary">Github</a>
+  </div>
 </section>
 
 <footer>
-© 2026 AynuDaDev | aynudadevv[at]gmail[dot]com
+  © 2026 AynuDaDev | 
+  <span id="email" class="copy-email" data-tooltip="Click to copy email">aynudadevv[at]gmail[dot]com</span>
 </footer>
 
+<script>
+document.getElementById('email').addEventListener('click', () => {
+  const emailText = document.getElementById('email').innerText;
+  navigator.clipboard.writeText(emailText)
+    .then(() => {
+      const el = document.getElementById('email');
+      el.setAttribute('data-tooltip', 'Copied!');
+      setTimeout(() => el.setAttribute('data-tooltip', 'Click to copy email'), 1500);
+    });
+});
+</script>
+
 </body>
-
 </html>
-
