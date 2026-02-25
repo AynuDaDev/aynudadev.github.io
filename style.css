@@ -1,0 +1,162 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:#eaeaea;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+header{
+width:100%;
+padding:30px 12%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:600;
+font-size:1rem;
+letter-spacing:1px;
+opacity:0.8;
+}
+
+nav a{
+position:relative;
+color:#888;
+text-decoration:none;
+margin-left:30px;
+font-size:0.9rem;
+transition:0.3s;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:1px;
+background:#ffffff;
+transition:0.3s ease;
+}
+
+nav a:hover{
+color:#ffffff;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+.hero{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+padding:0 12%;
+}
+
+.profile{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:30px;
+border:2px solid #ffffff;
+box-shadow:0 0 30px rgba(255,255,255,0.08);
+transition:0.4s ease;
+}
+
+.profile:hover{
+transform:scale(1.05);
+box-shadow:0 0 40px rgba(255,255,255,0.15);
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+letter-spacing:-2px;
+color:#ffffff;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.1rem;
+color:#9a9a9a;
+max-width:500px;
+line-height:1.6;
+}
+
+.hero p a{
+position:relative;
+color:#ffffff;
+text-decoration:none;
+transition:0.3s;
+}
+
+.hero p a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-3px;
+width:100%;
+height:1px;
+background:#444;
+transition:0.3s;
+}
+
+.hero p a:hover::after{
+background:#ffffff;
+box-shadow:0 0 8px rgba(255,255,255,0.6);
+}
+
+.buttons{
+margin-top:40px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+border-radius:50px;
+text-decoration:none;
+font-size:0.9rem;
+font-weight:600;
+margin-right:20px;
+transition:0.3s;
+}
+
+.btn.primary{
+background:#ffffff;
+color:#000000;
+}
+
+.btn.primary:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(255,255,255,0.15);
+}
+
+.btn.secondary{
+border:1px solid #444;
+color:#eaeaea;
+}
+
+.btn.secondary:hover{
+border-color:#ffffff;
+color:#ffffff;
+transform:translateY(-3px);
+}
+
+footer{
+padding:30px 12%;
+font-size:0.8rem;
+color:#666;
+}
