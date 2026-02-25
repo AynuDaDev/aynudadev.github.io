@@ -160,3 +160,58 @@ padding:30px 12%;
 font-size:0.8rem;
 color:#666;
 }
+.copy-email {
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.copy-email:hover {
+  color: #747474;
+}
+
+.copy-email::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.copy-email:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.copy-email::before {
+  content: "";
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.copy-email:hover::before {
+  opacity: 1;
+}
